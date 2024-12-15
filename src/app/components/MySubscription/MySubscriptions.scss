@@ -1,0 +1,33 @@
+.subscriptions {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            text-align: left;
+            padding: 0.8rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tbody tr:hover {
+            background: lighten(#f4f4f4, 10%);
+        }
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: #004aad;
+    }
+}

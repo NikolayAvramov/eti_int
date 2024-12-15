@@ -1,0 +1,34 @@
+.terms {
+    background-color: rgb(51, 45, 45);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+
+    &-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &-title {
+        color: azure;
+        padding: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    &-text {
+        padding-bottom: 2rem;
+    }
+
+    &-effective-date {
+        padding-bottom: 3rem;
+    }
+    &-list {
+        list-style: none;
+        text-align: start;
+        padding-bottom: 5rem;
+        &-item {
+            padding: 1rem;
+            letter-spacing: 1.3;
+        }
+    }
+}

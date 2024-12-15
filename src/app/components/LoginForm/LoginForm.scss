@@ -1,0 +1,77 @@
+.login {
+    color: white;
+    padding-top: 4rem;
+    width: 50rem;
+    height: 35rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    background-color: rgba(70, 66, 66, 0.616);
+    &-form {
+        width: 70%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    &-title {
+        text-align: center;
+        padding: 2rem;
+        color: white;
+    }
+    &-row {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-right: 6rem;
+        margin-top: 1rem;
+
+        // label {
+        //     color: black;
+        //     width: 1rem;
+        //     transform: translate(110%, 10%);
+        // }
+        input {
+            width: 25rem;
+            height: 3rem;
+        }
+    }
+    &-btn-wrapper {
+        text-align: center;
+    }
+
+    &-btn {
+        font-size: 2rem;
+        margin-top: 3rem;
+        color: white;
+        padding: 0.5rem 1rem;
+        background-color: blue;
+        border-radius: 0.8rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(98, 98, 207);
+        }
+    }
+}
+.show-icon {
+    color: black;
+    position: absolute;
+    right: 6rem;
+    top: 0.7rem;
+}
+.hide-icon {
+    color: black;
+    position: absolute;
+    right: 6rem;
+    top: 0.7rem;
+}
+.text-to-register {
+    text-align: center;
+    margin-top: 5rem;
+
+    a {
+        text-decoration: none;
+        color: rgb(212, 188, 106);
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+.footer {
+    background-color: rgb(65, 59, 59);
+    color: white;
+    font-size: 1.8rem;
+
+    width: 100%;
+
+    &-container {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    &-title {
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid white;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &-section:first-child {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &-logo {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+    &-list {
+        list-style: none;
+        color: white;
+        text-align: center;
+
+        li {
+            padding-top: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                cursor: pointer;
+                color: bisque;
+            }
+        }
+    }
+    &-social {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        li {
+            padding-top: 2rem;
+            margin: 0 auto;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                    color: bisque;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}

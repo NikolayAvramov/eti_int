@@ -1,0 +1,36 @@
+.tv {
+    &-page-title {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        padding: 2rem;
+    }
+    &-content-wrapper {
+        width: 70%;
+        background-color: rgba(247, 187, 76, 0.788);
+        padding-bottom: 4rem;
+        margin: 0 auto;
+    }
+    &-image-background {
+        background-image: url("/tv.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    &-plans-slider {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+    &-plans-container {
+        margin: 0 auto;
+        display: grid;
+        width: 80%;
+        grid-template-columns: 32% 32% 32%;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+}

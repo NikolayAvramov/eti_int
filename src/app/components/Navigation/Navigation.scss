@@ -1,0 +1,59 @@
+.nav {
+    background-color: rgb(59, 58, 58);
+
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        height: 8rem; //// that makes logo to appear under navbar
+    }
+
+    &-logo {
+        width: 10rem;
+        height: 10rem;
+        &-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &-list {
+        display: flex;
+        font-size: 2rem;
+        list-style: none;
+        align-items: center;
+
+        li {
+            padding-left: 2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: bisque;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        li:first-child {
+            padding-left: 0;
+        }
+    }
+    @media (max-width: 76.8rem) {
+        &-container {
+            height: 6rem;
+        }
+        &-list {
+            font-size: 1.6rem;
+        }
+        &-logo {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+}

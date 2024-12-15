@@ -1,0 +1,98 @@
+h1 {
+    text-align: center;
+    color: #054ba7;
+    margin-bottom: 2rem;
+}
+
+.profile,
+.subscriptions {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 1rem;
+        color: #054ba7;
+    }
+}
+
+form {
+    .field {
+        margin-bottom: 1.5rem;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 1rem;
+            background: #f4f4f4;
+            resize: none;
+
+            &:focus {
+                outline: none;
+                border-color: #054ba7;
+                background: lighten(#f4f4f4, 10%);
+            }
+
+            &:read-only {
+                background: rgb(255, 255, 255);
+                border: 1px solid #eee;
+            }
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        .saveButton,
+        .cancelButton {
+            background-color: #054ba7;
+            color: rgb(255, 255, 255);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken(#054ba7, 10%);
+            }
+        }
+
+        .cancelButton {
+            background-color: #e74c3c;
+
+            &:hover {
+                background-color: darken(#e74c3c, 10%);
+            }
+        }
+    }
+}
+.editButton {
+    background-color: #054ba7;
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken(#054ba7, 10%);
+    }
+}

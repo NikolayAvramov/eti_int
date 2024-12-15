@@ -1,0 +1,79 @@
+.slider-card {
+    &-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 50rem;
+        border: 1px solid gray;
+        border-radius: 1rem;
+        background-color: aliceblue;
+    }
+    &-title {
+        font-size: 3.5rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem;
+        border-bottom: 1px solid gray;
+        width: 90%;
+    }
+
+    &-description {
+        font-size: 1.7rem;
+        margin: 0 auto;
+        width: 90%;
+        padding: 2rem;
+    }
+
+    &-price {
+        color: rgb(8, 117, 206);
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    &-features-list {
+        list-style: none;
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 2rem;
+    }
+
+    &-button-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    &-button {
+        font-size: 4rem;
+        padding: 1rem;
+        background-color: rgb(0, 174, 255);
+        color: rgb(253, 253, 253);
+        border-radius: 0.6rem;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+    }
+    @media (max-width: 76.8rem) {
+        &-container {
+            height: 35rem;
+        }
+        &-title {
+            font-size: 2.5rem;
+            padding: 1rem;
+        }
+        &-description {
+            font-size: 1.6rem;
+            padding: 1.6rem;
+        }
+        &-price {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        &-features-list {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            padding: 1.5rem;
+        }
+        &-button {
+            font-size: 2rem;
+        }
+    }
+}

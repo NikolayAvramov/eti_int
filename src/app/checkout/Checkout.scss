@@ -1,0 +1,183 @@
+.checkout {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+
+    &-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #2c3e50;
+    }
+
+    &-content {
+        display: flex;
+        gap: 1.5rem;
+    }
+    &-left-side {
+        .plan-details {
+            .plan-title {
+                font-size: 1.8rem;
+                color: #2c3e50;
+                margin-bottom: 1rem;
+            }
+
+            .plan-description {
+                margin: 1rem 0;
+                color: #555;
+                font-size: 1rem;
+            }
+
+            .plan-price {
+                font-weight: bold;
+                color: #27ae60;
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .plan-features {
+                list-style: none;
+                padding: 0;
+
+                .feature-item {
+                    margin: 0.5rem 0;
+                    font-size: 0.95rem;
+                    color: #555;
+                    display: flex;
+                    align-items: center;
+
+                    &:before {
+                        content: "✔";
+                        margin-right: 0.8rem;
+                        color: #27ae60;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .total-cost {
+                margin-top: 2rem;
+                font-size: 1.2rem;
+                color: #2c3e50;
+            }
+        }
+    }
+
+    &-right-side {
+        .billing-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .input-field {
+                width: 90%;
+                padding: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                color: #333;
+                outline: none;
+
+                &:focus {
+                    border-color: #3498db;
+                    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+                }
+            }
+
+            .payment-header {
+                font-size: 1.5rem;
+                margin: 2rem 0 1rem;
+                color: #2c3e50;
+            }
+
+            .card-details {
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 1rem;
+                padding: 1.5rem;
+
+                .input-group {
+                    margin-bottom: 1.5rem;
+
+                    label {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-size: 1.2rem;
+                        color: #555;
+                    }
+
+                    .input-field {
+                        font-size: 1.2rem;
+                        width: 80%;
+                        padding: 1rem;
+                    }
+                }
+
+                .input-row {
+                    display: flex;
+                    gap: 1rem;
+
+                    .input-group {
+                        flex: 1;
+                    }
+                }
+            }
+
+            .terms {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 0.9rem;
+                color: #555;
+
+                .checkbox {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                a {
+                    color: #3498db;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .submit-btn {
+                width: 100%;
+                padding: 1.2rem 2rem;
+                background-color: #3498db;
+                border: none;
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #2980b9;
+                }
+            }
+        }
+    }
+    &-left-side,
+    &-right-side {
+        flex: 1;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        padding: 4rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 76.8rem) {
+        .checkout {
+            flex-direction: column;
+        }
+    }
+}
